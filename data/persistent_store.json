@@ -367,6 +367,64 @@
       "createdAt": 1793852685111,
       "updatedAt": 1793852685111,
       "displayMemberCount": null
+    },
+    "e2e_pub_test_1793853931132": {
+      "id": "e2e_pub_test_1793853931132",
+      "name": "قناة اختبار عامة مفتوحة",
+      "description": "",
+      "password": "",
+      "isOpenPublic": true,
+      "isPrivate": false,
+      "visibility": "public",
+      "allowedMemberIds": [
+        1
+      ],
+      "memberIds": [
+        1,
+        2
+      ],
+      "createdAt": 1793853931136,
+      "updatedAt": 1793853931150,
+      "displayMemberCount": null
+    },
+    "e2e_pwd_chan1_1793853931133": {
+      "id": "e2e_pwd_chan1_1793853931133",
+      "name": "قناة التوصيات 1 (محمية بكلمة مرور)",
+      "description": "",
+      "password": "SecretTradingPass2026",
+      "isOpenPublic": false,
+      "isPrivate": true,
+      "visibility": "public",
+      "allowedMemberIds": [
+        1,
+        2,
+        5
+      ],
+      "memberIds": [
+        1,
+        2
+      ],
+      "createdAt": 1793853931141,
+      "updatedAt": 1793853931226,
+      "displayMemberCount": null
+    },
+    "e2e_pwd_chan2_1793853931133": {
+      "id": "e2e_pwd_chan2_1793853931133",
+      "name": "قناة التوصيات 2 (مستقلة تماماً)",
+      "description": "",
+      "password": "SecretTradingPass2026",
+      "isOpenPublic": false,
+      "isPrivate": true,
+      "visibility": "public",
+      "allowedMemberIds": [
+        1
+      ],
+      "memberIds": [
+        1
+      ],
+      "createdAt": 1793853931145,
+      "updatedAt": 1793853931145,
+      "displayMemberCount": null
     }
   },
   "channelMessages": {
@@ -564,6 +622,34 @@
         "replyToId": null,
         "isDeleted": false,
         "timestamp": 1793852685164
+      }
+    ],
+    "e2e_pub_test_1793853931132": [
+      {
+        "id": "msg_1793853931156_2_62ypy",
+        "channelId": "e2e_pub_test_1793853931132",
+        "senderId": 2,
+        "senderName": "مستخدم عادي",
+        "senderRole": "user",
+        "senderAvatarUrl": null,
+        "text": "رسالة تجريبية في القناة العامة المفتوحة",
+        "replyToId": null,
+        "isDeleted": false,
+        "timestamp": 1793853931156
+      }
+    ],
+    "e2e_pwd_chan1_1793853931133": [
+      {
+        "id": "msg_1793853931221_1_mg1z0",
+        "channelId": "e2e_pwd_chan1_1793853931133",
+        "senderId": 1,
+        "senderName": "القائد Sami",
+        "senderRole": "owner",
+        "senderAvatarUrl": null,
+        "text": "رسالة تاريخية هامة في القناة للتأكد من حفظ البيانات",
+        "replyToId": null,
+        "isDeleted": false,
+        "timestamp": 1793853931221
       }
     ]
   },

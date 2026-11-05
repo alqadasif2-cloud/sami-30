@@ -184,6 +184,8 @@ jobs:
       # 5. Setup Gradle Wrapper Cache
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: "8.6"
 
       # 6. Verify & Ensure Root gradle.properties
       - name: Verify & Ensure Root gradle.properties
@@ -202,7 +204,7 @@ jobs:
       - name: Build and Inspect Android Release APK
         run: |
           if [ ! -f "./gradlew" ] || [ ! -f "./gradle/wrapper/gradle-wrapper.jar" ]; then
-            gradle wrapper --gradle-version 8.6
+            gradle wrapper --gradle-version 8.6 --no-daemon -c /dev/null 2>/dev/null || gradle wrapper --gradle-version 8.6 --no-daemon
           fi
           chmod +x ./gradlew
 
